@@ -1,28 +1,83 @@
-# React + TypeScript + Vite
+# Wallet Dashboard 钱包仪表盘
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern wallet dashboard built with React, TypeScript, and Vite.  
+一个现代化的钱包资产仪表盘，基于 React、TypeScript 和 Vite 构建。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features 功能特性
+- Display wallet balances and total USD value
+- Multi-currency support with real-time exchange rates
+- Modular and extensible code structure
+- TypeScript type safety
+- 快速展示钱包余额与总资产美元价值
+- 多币种支持，实时汇率
+- 模块化、易扩展
+- TypeScript 类型安全
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Quick Start 快速开始
+
+```bash
+# 1. 安装依赖 Install dependencies
+npm install
+
+# 2. 启动开发服务器 Start dev server
+npm run dev
+
+# 3. 构建生产环境 Build for production
+npm run build
+
+# 4. 预览生产环境 Preview production
+npm run preview
+```
+
+---
+
+## 📁 Project Structure 目录结构
+
+```
+wallet-dashboard/
+├── public/                # 静态资源 Static assets
+├── src/
+│   ├── assets/            # 图片等资源 Images & assets
+│   ├── components/        # 主要组件 Main components
+│   │   └── WalletDashboard.tsx  # 钱包仪表盘主组件
+│   ├── data/              # 模拟数据 Mock data
+│   ├── services/          # 数据处理与服务层 Services
+│   ├── types/             # TypeScript 类型 Type definitions
+│   ├── App.tsx            # 应用入口主组件 App entry
+│   └── main.tsx           # 应用入口 Main entry
+├── package.json           # 项目依赖 Project dependencies
+├── vite.config.ts         # Vite 配置 Vite config
+└── README.md              # 项目说明文档 This file
+```
+
+---
+
+## 🛠️ Common Commands 常用命令
+- `npm run dev` 启动开发环境
+- `npm run build` 构建生产包
+- `npm run preview` 预览生产包
+- `npm run lint` 代码检查
+
+---
+
+## 🧩 ESLint 配置建议
+
+如需生产级代码质量保障，建议启用类型感知的 ESLint 规则：
 
 ```js
 export default tseslint.config({
   extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
     ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
+    // 或者更严格的规则 stricter rules
+    // ...tseslint.configs.strictTypeChecked,
+    // 可选：风格化规则 stylistic rules
+    // ...tseslint.configs.stylisticTypeChecked,
   ],
   languageOptions: {
-    // other options...
     parserOptions: {
       project: ['./tsconfig.node.json', './tsconfig.app.json'],
       tsconfigRootDir: import.meta.dirname,
@@ -31,24 +86,14 @@ export default tseslint.config({
 })
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+更多 React 相关规则可参考 [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) 和 [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom)。
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🤝 Contributing 贡献
+欢迎提 issue 或 PR，一起让项目更好！
+
+---
+
+## 📄 License
+MIT
