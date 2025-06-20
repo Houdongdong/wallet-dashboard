@@ -1,0 +1,46 @@
+{
+    "currencies": [
+        {
+            "coin_id": "BTC",
+            "name": "Bitcoin",
+            "symbol": "BTC",
+            "token_decimal": 8,
+            "colorful_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/colorful_logo/5c1246f55568a400e48ac233/bitcoin.png",
+            "gray_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/gray_logo/5c1246f55568a400e48ac233/bitcoin1.png"
+        },
+        {
+            "coin_id": "ETH",
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "token_decimal": 18,
+            "colorful_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/colorful_logo/5c12487d5568a4017c20a993/ethereum.png",
+            "gray_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/gray_logo/5c12487d5568a4017c20a993/ethereum.png"
+        },
+        {
+            "coin_id": "CRO",
+            "name": "Crypto.com Coin",
+            "symbol": "CRO",
+            "token_decimal": 8,
+            "colorful_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/colorful_logo/5c1248c15568a4017c20aa87/cro.png",
+            "gray_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/gray_logo/5c1248c15568a4017c20aa87/cro.png"
+        },
+        {
+            "coin_id": "USDT",
+            "name": "Tether",
+            "symbol": "USDT",
+            "token_decimal": 6,
+            "colorful_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/colorful_logo/5c12487f5568a4017c20a999/tether.png",
+            "gray_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/gray_logo/5c12487f5568a4017c20a999/tether.png"
+        },
+        {
+            "coin_id": "DAI",
+            "name": "Dai",
+            "symbol": "DAI",
+            "token_decimal": 18,
+            "colorful_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/colorful_logo/5e01c4cd49cde700adb27b0d/4943__1_.png",
+            "gray_image_url": "https://s3-ap-southeast-1.amazonaws.com/monaco-cointrack-production/uploads/coin/gray_logo/5e01c4cd49cde700adb27b0d/DAIxxxhdpi.png"
+        }
+    ],
+    "total": 5,
+    "ok": true
+} 
